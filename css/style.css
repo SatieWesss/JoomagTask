@@ -189,3 +189,42 @@ header #rightSide button:hover {
   width: 533px;
   height: 446px;
 }
+#chat {
+  position: absolute;
+  width: 1920px;
+  height: 344px;
+  top: 2235.83px;
+  background: linear-gradient(312.34deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#chat h2 {
+  width: 464px;
+  height: 34.15px;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+#chat h2 span {
+  font-weight: bold;
+}
+#chat button {
+  width: 133px;
+  height: 37px;
+  background: #2836FD;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 191px;
+  left: auto;
+  cursor: pointer;
+  margin-top: 40px;
+}
+#chat button:hover {
+  background: #0741B0;
+}
