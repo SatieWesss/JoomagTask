@@ -189,17 +189,30 @@ header #rightSide button:hover {
   width: 533px;
   height: 446px;
 }
-#chat {
+#smallSection {
+  height: 424px;
+}
+#smallSection #light {
+  position: absolute;
+  top: 2196px;
+  left: 916px;
+  width: 1004px;
+  height: 424px;
+  background: #F1F8FF;
+  opacity: 0.5;
+}
+#smallSection #chat {
+  z-index: 999;
   position: absolute;
   width: 1920px;
   height: 344px;
-  top: 2235.83px;
+  top: 2236px;
   background: linear-gradient(312.34deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#chat h2 {
+#smallSection #chat h2 {
   width: 464px;
   height: 34.15px;
   font-size: 32px;
@@ -207,10 +220,10 @@ header #rightSide button:hover {
   color: #FFFFFF;
   font-weight: 100;
 }
-#chat h2 span {
+#smallSection #chat h2 span {
   font-weight: bold;
 }
-#chat button {
+#smallSection #chat button {
   width: 133px;
   height: 37px;
   background: #2836FD;
@@ -225,6 +238,72 @@ header #rightSide button:hover {
   cursor: pointer;
   margin-top: 40px;
 }
-#chat button:hover {
+#smallSection #chat button:hover {
   background: #0741B0;
+}
+#reviews {
+  width: 1920px;
+  height: 915px;
+  position: absolute;
+  top: 2620px;
+  left: 0;
+}
+#reviews #lightStyle {
+  width: 971px;
+  height: 488px;
+  margin-top: 286px;
+  background: #F1F8FF;
+  opacity: 0.5;
+}
+#reviews #customers {
+  position: absolute;
+  top: 180px;
+  left: 389px;
+  width: 1091px;
+}
+#reviews #customers > span {
+  color: #0741B0;
+  font-weight: 800;
+}
+#reviews #customers button {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background: #FFFFFF;
+  color: #0741B0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#reviews #customers #leftButton {
+  position: relative;
+  right: 45px;
+}
+#reviews #customers #rightButton {
+  position: relative;
+  right: -995px;
+}
+#reviews #customers #comments {
+  width: 100%;
+  height: 407px;
+  background: #002B58;
+  margin-top: 66px;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reviews #customers #comments #text {
+  width: 949px;
+  height: 216px;
+}
+#reviews #customers #comments #text p {
+  margin-top: 0;
+}
+#reviews #customers #comments #text span {
+  margin-top: 314px;
+  margin-left: 681px;
 }
