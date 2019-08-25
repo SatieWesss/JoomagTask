@@ -1,7 +1,13 @@
 body {
     margin: 0;
+    font-family: 'proxima-nova', sans-serif;
     }
-    
+    .line {
+        width: 60px;
+        height: 4px;
+        background: #2863FD;
+        border-radius: 10px;
+    }
 header {
     position: absolute;
     z-index: 666;
@@ -14,7 +20,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'proxima-nova', sans-serif;
 
     
     #leftSide {
@@ -64,7 +69,6 @@ header {
     // THE HEADER STYLING IS DONE!!!///////////////////////////////////////
 
 #hero {
-border: solid red;
 position: absolute;
 width: 1920px;
 height: 780px;
@@ -73,7 +77,6 @@ top: 0px;
 background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
 
     #heroText {
-        font-family: 'proxima-nova', sans-serif;
         h1 {
             position: absolute;
             width: 658px;
@@ -111,21 +114,17 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
 ////////HERO section finished///////////
 
 #weLove {
-    border: solid red;
     width: 1920px;
     height: 780px;
-    color: red;
     position: absolute;
     left: 0;
     top: 780px;
 
     #mainOfweLove {
-        // border: solid green;
         position: absolute;
         left: 388px;
         top: 140px;
         width: 1144px;
-        font-family: 'proxima-nova', sans-serif;
 
         >div:first-of-type > h2:first-of-type {  //we Do what we lovee and...
             color: #000000;
@@ -143,12 +142,6 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
 
         }
 
-        .line {
-            width: 60px;
-            height: 4px;
-            background: #2863FD;
-            border-radius: 10px;
-        }
         #theFourReasons {
             display: flex;
             margin-top: 64px;
@@ -174,6 +167,59 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
         }
     }
 }
-
 ////I think it's OK with #weLove section/////////////////////////////
+#team {
+    width: 1920px;
+    height: 706px;
+    position: absolute;
+    top: 1560px;
+
+        #teamGlory {
+            width: 530px;
+            position: absolute;
+            left: 388px;
+            bottom: 280px;
+                span {
+                    color: #2863FD;
+                }
+                h2 {
+                    font-size: 32px;
+                    line-height: 42px;
+                    /* or 130% */
+                    width: 530px;
+                    height: 65.97px;
+                }
+                h4 {
+                    width: 530px;
+                    height: 131.01px;
+                    font-family: Proxima Nova;
+                    font-size: 18px;
+                    line-height: 27px;
+                    /* or 150% */
+                    color: #000000;
+                    font-weight: 100;
+                }
+        }
+
+        #lightBlue {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 751px;
+            height: 526px;
+            background: #F1F8FF;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+        img {
+            position: absolute;
+            top: 40px;
+            right: 384px;
+            width: 533px;
+            height: 446px;
+        }
+
+}
+
+// #TEAM section is finished too/////////////////////
+
 

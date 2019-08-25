@@ -1,5 +1,12 @@
 body {
   margin: 0;
+  font-family: 'proxima-nova', sans-serif;
+}
+.line {
+  width: 60px;
+  height: 4px;
+  background: #2863FD;
+  border-radius: 10px;
 }
 header {
   position: absolute;
@@ -13,7 +20,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'proxima-nova', sans-serif;
 }
 header #leftSide {
   display: flex;
@@ -53,16 +59,12 @@ header #rightSide button:hover {
   background: #0741B0;
 }
 #hero {
-  border: solid red;
   position: absolute;
   width: 1920px;
   height: 780px;
   left: 0px;
   top: 0px;
   background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
-}
-#hero #heroText {
-  font-family: 'proxima-nova', sans-serif;
 }
 #hero #heroText h1 {
   position: absolute;
@@ -95,10 +97,8 @@ header #rightSide button:hover {
   top: 140px;
 }
 #weLove {
-  border: solid red;
   width: 1920px;
   height: 780px;
-  color: red;
   position: absolute;
   left: 0;
   top: 780px;
@@ -108,7 +108,6 @@ header #rightSide button:hover {
   left: 388px;
   top: 140px;
   width: 1144px;
-  font-family: 'proxima-nova', sans-serif;
 }
 #weLove #mainOfweLove > div:first-of-type > h2:first-of-type {
   color: #000000;
@@ -122,12 +121,6 @@ header #rightSide button:hover {
   font-size: 32px;
   line-height: 42px;
   color: #2863FD;
-}
-#weLove #mainOfweLove .line {
-  width: 60px;
-  height: 4px;
-  background: #2863FD;
-  border-radius: 10px;
 }
 #weLove #mainOfweLove #theFourReasons {
   margin-top: 64px;
@@ -147,4 +140,52 @@ header #rightSide button:hover {
 #weLove #mainOfweLove #theFourReasons > div {
   height: 250px;
   margin-right: 31px;
+}
+#team {
+  width: 1920px;
+  height: 706px;
+  position: absolute;
+  top: 1560px;
+}
+#team #teamGlory {
+  width: 530px;
+  position: absolute;
+  left: 388px;
+  bottom: 280px;
+}
+#team #teamGlory span {
+  color: #2863FD;
+}
+#team #teamGlory h2 {
+  font-size: 32px;
+  line-height: 42px;
+  /* or 130% */
+  width: 530px;
+  height: 65.97px;
+}
+#team #teamGlory h4 {
+  width: 530px;
+  height: 131.01px;
+  font-family: Proxima Nova;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  color: #000000;
+  font-weight: 100;
+}
+#team #lightBlue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 751px;
+  height: 526px;
+  background: #F1F8FF;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#team img {
+  position: absolute;
+  top: 40px;
+  right: 384px;
+  width: 533px;
+  height: 446px;
 }
