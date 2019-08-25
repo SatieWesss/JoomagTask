@@ -8,6 +8,9 @@ body {
   background: #2863FD;
   border-radius: 10px;
 }
+li {
+  list-style: none;
+}
 header {
   position: absolute;
   z-index: 666;
@@ -306,4 +309,108 @@ header #rightSide button:hover {
 #reviews #customers #comments #text span {
   margin-top: 314px;
   margin-left: 681px;
+}
+footer {
+  width: 1920px;
+  height: 700px;
+  background: linear-gradient(293.97deg, #002347 1.74%, #002B58 100%);
+  position: absolute;
+  top: 3540px;
+}
+footer li {
+  cursor: pointer;
+}
+footer #mainFooter {
+  display: flex;
+  justify-content: space-between;
+}
+footer #mainFooter #container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-left: 380px;
+  width: 810px;
+}
+footer #mainFooter #container div {
+  text-align: left;
+}
+footer #mainFooter #container div h5 {
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+footer #mainFooter #container div ul {
+  margin: 0;
+  padding: 0;
+}
+footer #mainFooter #container div ul li {
+  font-size: 14px;
+  line-height: 22px;
+  /* or 160% */
+  color: #ACB4BF;
+}
+footer #mainFooter #contacts {
+  margin-top: 52px;
+  margin-right: 360px;
+}
+footer #mainFooter #contacts #socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 157px;
+  height: 17px;
+}
+footer #mainFooter #contacts #socialMediaIcons img {
+  width: 16px;
+}
+footer #mainFooter #contacts #findUs {
+  width: 270px;
+  height: 93px;
+  text-align: left;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ACB4BF;
+}
+footer #mainFooter #contacts #findUs ul {
+  margin: 0;
+  padding: 0;
+}
+footer #mainFooter #contacts #rating {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+footer #mainFooter #contacts #rating img {
+  width: 145px;
+  height: 66px;
+}
+footer #mainFooter #contacts #rating a {
+  text-decoration: none;
+  color: #ACB4BF;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+footer #copyRight {
+  display: flex;
+  justify-content: space-between;
+  width: 1239px;
+  height: 27px;
+  margin-left: 380px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ACB4BF;
+  margin-top: 42px;
+}
+footer #copyRight ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+footer #copyRight ul li {
+  margin: 0 10px;
+}
+footer #copyRight ul li:first-of-type {
+  color: #2863FD;
 }
