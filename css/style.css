@@ -94,3 +94,57 @@ header #rightSide button:hover {
   right: 147px;
   top: 140px;
 }
+#weLove {
+  border: solid red;
+  width: 1920px;
+  height: 780px;
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 780px;
+}
+#weLove #mainOfweLove {
+  position: absolute;
+  left: 388px;
+  top: 140px;
+  width: 1144px;
+  font-family: 'proxima-nova', sans-serif;
+}
+#weLove #mainOfweLove > div:first-of-type > h2:first-of-type {
+  color: #000000;
+  line-height: 42px;
+  width: 752px;
+  height: 34.41px;
+}
+#weLove #mainOfweLove h2 {
+  width: 752px;
+  height: 34.41px;
+  font-size: 32px;
+  line-height: 42px;
+  color: #2863FD;
+}
+#weLove #mainOfweLove .line {
+  width: 60px;
+  height: 4px;
+  background: #2863FD;
+  border-radius: 10px;
+}
+#weLove #mainOfweLove #theFourReasons {
+  margin-top: 64px;
+  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+}
+#weLove #mainOfweLove #theFourReasons > img {
+  width: 121px;
+}
+#weLove #mainOfweLove #theFourReasons p {
+  width: 260px;
+}
+#weLove #mainOfweLove #theFourReasons > div {
+  height: 250px;
+  margin-right: 31px;
+}
