@@ -13,6 +13,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'proxima-nova', sans-serif;
 }
 header #leftSide {
   display: flex;
@@ -31,21 +32,25 @@ header #leftSide ul li a {
   color: white;
   text-decoration: none;
   margin: 0 16px;
-  font-family: Proxima Nova;
   font-size: 16px;
   line-height: 19px;
+}
+header #rightSide a {
+  cursor: pointer;
 }
 header #rightSide button {
   background: #2863FD;
   border-radius: 100px;
   border: none;
-  font-family: Proxima Nova;
   font-size: 16px;
   padding: 12px 30px;
   line-height: 16px;
-  margin-left: 24px;
+  margin-left: 32px;
   color: #FFFFFF;
   cursor: pointer;
+}
+header #rightSide button:hover {
+  background: #0741B0;
 }
 #hero {
   border: solid red;
@@ -55,4 +60,37 @@ header #rightSide button {
   left: 0px;
   top: 0px;
   background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+}
+#hero #heroText {
+  font-family: 'proxima-nova', sans-serif;
+}
+#hero #heroText h1 {
+  position: absolute;
+  width: 658px;
+  height: 121.2px;
+  left: 290.94px;
+  top: 277.81px;
+  font-size: 48px;
+  line-height: 62px;
+  /* or 130% */
+  color: #FFFFFF;
+}
+#hero #heroText h4 {
+  position: absolute;
+  width: 658px;
+  height: 45.86px;
+  left: 290.94px;
+  top: 429.81px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 52px;
+  /* or 130% */
+  color: #FFFFFF;
+}
+#hero img {
+  position: absolute;
+  width: 804px;
+  height: 542px;
+  right: 147px;
+  top: 140px;
 }
