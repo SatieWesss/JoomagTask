@@ -1,16 +1,21 @@
 body {
     margin: 0;
     font-family: 'proxima-nova', sans-serif;
+    .line {
+        width: 60px;
+        height: 4px;
+        background: #2863FD;
+        border-radius: 10px;
     }
-.line {
-    width: 60px;
-    height: 4px;
-    background: #2863FD;
-    border-radius: 10px;
-}
-li {
-    list-style: none;
-}
+    li {
+        list-style: none;
+    }
+    button {
+        outline: none;
+    }
+    
+    }
+   
 header {
     position: absolute;
     z-index: 666;
@@ -23,7 +28,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     
     #leftSide {
         display: flex;
@@ -33,6 +37,79 @@ header {
         }
         ul {
             display: flex;
+            .mini {
+                width: 15px;
+                height: 15px;
+                background:#FFFFFF;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: -5px;
+                left: 50px;
+            }
+            #hiddenPart {
+                display: none;
+                position: absolute;
+                top: 37px;
+                width: 788px;
+                height: 161px;
+                background: #FFFFFF;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+                color:#000000;
+                   section {
+                       padding: 0;
+                       margin-right: 37px;
+                       text-align: left;
+                       line-height: 24px;
+                   }
+                 > section > ul {
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: flex-start;
+                     margin: 0;
+                     padding: 0;
+                     a {
+                         margin: 0;
+                         padding: 0;
+                         color: #000000;
+                         font-size: 16px;
+                     }       
+                     a:hover {
+                        color: #2863FD;
+                      }    
+                       
+                 }
+            }
+            #hiddenOfResources {
+                display: none;
+                position: absolute;
+                top: 37px;
+                left: 480px;
+                background: #FFFFFF;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+             
+                    a {
+                        color: #000000;
+                        line-height: 24px;
+                        font-size: 16px;
+
+                    }
+                    a:hover {
+                        color: #2863FD;
+                    }
+            }
+            
+            #solutions:hover {
+                #hiddenPart {
+                    display:flex;
+
+                }
+            }
+            #resources:hover {
+                #hiddenOfResources {
+                    display: block;
+                }
+            }
+            
             li{
                 list-style: none;
                 
@@ -43,26 +120,40 @@ header {
                     font-size: 16px;
                     line-height: 19px;
                 }
+                a:hover {
+                    color: #2863FD;
+                  }            
             }
         }
     }
 
     #rightSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
             a {
                 cursor: pointer;
             }
-            button {
+            #freeTrial {
             background: #2863FD;
             border-radius: 100px;
             border: none;
             font-size: 16px;
             padding: 12px 30px;
-            line-height: 16px;
             margin-left: 32px;
             color: #FFFFFF;
             cursor: pointer;
             }
-            
+
+            #menuBar {
+                font-size: 30px;
+                border: none;
+                background: none;
+                color: #FFFFFF;
+                display: none;
+                margin-left: 32px;
+            }
             button:hover {
                 background: #0741B0;
             }
@@ -80,29 +171,23 @@ top: 0px;
 background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
 
     #heroText {
+        position: absolute;
+        top: 277px;
+        left: 290px;
+        width: 658px;
+        height: 250px;
         h1 {
-            position: absolute;
-            width: 658px;
-            height: 121.2px;
-            left: 290.94px;
-            top: 277.81px;
             font-size: 48px;
             line-height: 62px;
-            /* or 130% */
             color: #FFFFFF;
+            margin: 0;
             }
 
         h4 {
-            position: absolute;
-            width: 658px;
-            height: 45.86px;
-            left: 290.94px;
-            top: 429.81px;
             font-size: 40px;
             font-weight: 100;
-            line-height: 52px;
-            /* or 130% */
             color: #FFFFFF;
+            margin: 30px 0 0 0;
             }
         }
         img {
@@ -129,7 +214,7 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
         top: 140px;
         width: 1144px;
 
-        >div:first-of-type > h2:first-of-type {  //we Do what we lovee and...
+        >section:first-of-type > h2:first-of-type {  //we Do what we lovee and...
             color: #000000;
             line-height: 42px;
             width: 752px;
@@ -151,7 +236,6 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
             color: #000000;
             font-size: 18px;
             line-height: 27px;
-            /* or 150% */
             display: flex;
             align-items: center;
 
@@ -163,7 +247,7 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
                  width: 260px;
              }
 
-             >div {
+             >section {
                  height: 250px;
                  margin-right: 31px;
              }
@@ -188,17 +272,13 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
                 h2 {
                     font-size: 32px;
                     line-height: 42px;
-                    /* or 130% */
-                    width: 530px;
                     height: 65.97px;
                 }
                 h4 {
-                    width: 530px;
                     height: 131.01px;
                     font-family: Proxima Nova;
                     font-size: 18px;
                     line-height: 27px;
-                    /* or 150% */
                     color: #000000;
                     font-weight: 100;
                 }
@@ -226,7 +306,7 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
 // #TEAM section is finished too/////////////////////
 #smallSection {
     height: 424px;
-
+    width: 1920px;
     #light {
         position: absolute;
         top: 2196px;
@@ -312,32 +392,32 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
                 background: #FFFFFF;
                 color: #0741B0;
                 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                
             }
             #leftButton {
-                position: relative;
-                right: 45px;
+                position: absolute;
+                left: -25px;
+                top: 303px;
             }
             #rightButton {
-                position: relative;
-                right: -995px;
+                position: absolute;
+                right:-25px;
+                top: 303px;
             }
             #comments {
                 width: 100%;
                 height: 407px;
                 background: #002B58;
-                // transform: matrix(-1, 0, 0, 1, 0, 0);
                 margin-top: 66px;
                 font-size: 18px;
                 line-height: 27px;
-                /* or 150% */
                 color: #FFFFFF;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                    
                     #text {
-                        width: 949px;
+                        width: 86%;
                         height: 216px;
+                        position: absolute;
+                        left: 70px;
+                        top: 200px;
 
                             p{
                                 margin-top: 0;
@@ -345,6 +425,7 @@ background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 10
                             span {
                                 margin-top: 314px;
                                 margin-left: 681px;
+                                font-weight: bold;
                             }
                     }
                 }
@@ -365,7 +446,6 @@ footer {
         #mainFooter {
             display: flex;
             justify-content: space-between;
-
             #container {
                 display: flex;
                 justify-content: space-between;
@@ -373,7 +453,7 @@ footer {
                 margin-left: 380px;
                 width: 810px;
                 
-                div {
+                section {
                     text-align: left;
                     h5 {
                         font-size: 16px;
@@ -466,4 +546,162 @@ footer {
             }
     }
         
+}
+
+@media only screen and (max-width:992px) {
+    header {
+        width: 890px;
+        #leftSide ul {
+            display: none;
+
+        }
+
+        #rightSide {
+            #menuBar {
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+    #hero {
+        width: 992px;
+            #heroText {
+                position: absolute;
+                top: 144px;
+                left: 28px;
+                width: 540px;
+                height: 166px;
+                    h1 {
+                        font-size: 40px;
+                        line-height: 52px;
+                    }
+                    h4 {
+                        font-size: 32px;
+                    }
+            }
+            img {
+                width: 608px;
+                height: 410px;
+                right: 26px;
+                top: 336px;
+            }
+    }
+    
+    #weLove {
+        height: 1050px;
+        width: 992px;
+
+        #mainOfweLove {
+            top: 100px;
+            left: 27px;
+            width: 820px;
+
+            #theFourReasons {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,auto);
+                height: auto;
+                >section {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    #team {
+        top: 1835px;
+        width: 992px;
+        height: 545px;
+
+            #teamGlory {
+                left: 25px;
+                bottom: 200px;
+                width: 430px;
+                    h2 {
+                        font-size: 24px;
+                        margin-top: 0;
+                    }
+                    h4 {
+                        height: 156px;
+                        width: 435px;
+                    }
+            }
+            #lightBlue {
+                width: 336px;
+                height: 423px;
+            }
+            img {
+                top: 32px;
+                right: 38px;
+                width: 428px;
+                height: 358px;
+            }
+    }
+
+    #smallSection {
+        width: 992px;
+        #light {
+            top:2365px;
+            width: 539px;
+            left: 453px;
+        }
+        #chat {
+            top:2410px;
+            width: 992px;
+        }
+    }
+
+    #reviews {
+        top: 2790px;
+        width: 992px;
+
+            #customers {
+                width: 891px;
+                top: 100px;
+                left: 27px;
+
+                #comments {
+                    height: 407px;
+                    
+                }
+
+                #text {
+                    height: 238px;
+                    width: 755px;
+
+                    span {
+                            position: absolute;
+                            top: -50px;
+                            left: -190px;
+                            width: 269px;
+                        }
+                }
+            }
+            #lightStyle {
+                width: 579px;
+                margin-top: 196px;
+            }
+    }
+
+    footer {
+        width: 992px;
+        height: auto;
+        #container {
+            margin-left: 20px !important;
+            width: 690px
+        }
+        #contacts {
+            margin-right: 20px !important;
+            margin-left: 50px;
+
+            #findUs {
+                width: 200px !important;
+            }
+        }
+        #copyRight {
+            width: 952px;
+            margin-left: 20px !important;
+
+        }
+    }
 }

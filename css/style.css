@@ -2,14 +2,17 @@ body {
   margin: 0;
   font-family: 'proxima-nova', sans-serif;
 }
-.line {
+body .line {
   width: 60px;
   height: 4px;
   background: #2863FD;
   border-radius: 10px;
 }
-li {
+body li {
   list-style: none;
+}
+body button {
+  outline: none;
 }
 header {
   position: absolute;
@@ -34,6 +37,69 @@ header #leftSide > img {
 header #leftSide ul {
   display: flex;
 }
+header #leftSide ul .mini {
+  width: 15px;
+  height: 15px;
+  background: #FFFFFF;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -5px;
+  left: 50px;
+}
+header #leftSide ul #hiddenPart {
+  display: none;
+  position: absolute;
+  top: 37px;
+  width: 788px;
+  height: 161px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+header #leftSide ul #hiddenPart section {
+  padding: 0;
+  margin-right: 37px;
+  text-align: left;
+  line-height: 24px;
+}
+header #leftSide ul #hiddenPart > section > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+header #leftSide ul #hiddenPart > section > ul a {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 16px;
+}
+header #leftSide ul #hiddenPart > section > ul a:hover {
+  color: #2863FD;
+}
+header #leftSide ul #hiddenOfResources {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: 480px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+header #leftSide ul #hiddenOfResources a {
+  color: #000000;
+  line-height: 24px;
+  font-size: 16px;
+}
+header #leftSide ul #hiddenOfResources a:hover {
+  color: #2863FD;
+}
+header #leftSide ul #solutions:hover #hiddenPart {
+  display: flex;
+}
+header #leftSide ul #resources:hover #hiddenOfResources {
+  display: block;
+}
 header #leftSide ul li {
   list-style: none;
 }
@@ -44,19 +110,34 @@ header #leftSide ul li a {
   font-size: 16px;
   line-height: 19px;
 }
+header #leftSide ul li a:hover {
+  color: #2863FD;
+}
+header #rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header #rightSide a {
   cursor: pointer;
 }
-header #rightSide button {
+header #rightSide #freeTrial {
   background: #2863FD;
   border-radius: 100px;
   border: none;
   font-size: 16px;
   padding: 12px 30px;
-  line-height: 16px;
   margin-left: 32px;
   color: #FFFFFF;
   cursor: pointer;
+}
+header #rightSide #menuBar {
+  font-size: 30px;
+  border: none;
+  background: none;
+  color: #FFFFFF;
+  display: none;
+  margin-left: 32px;
 }
 header #rightSide button:hover {
   background: #0741B0;
@@ -69,28 +150,24 @@ header #rightSide button:hover {
   top: 0px;
   background: linear-gradient(291.89deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
 }
-#hero #heroText h1 {
+#hero #heroText {
   position: absolute;
+  top: 277px;
+  left: 290px;
   width: 658px;
-  height: 121.2px;
-  left: 290.94px;
-  top: 277.81px;
+  height: 250px;
+}
+#hero #heroText h1 {
   font-size: 48px;
   line-height: 62px;
-  /* or 130% */
   color: #FFFFFF;
+  margin: 0;
 }
 #hero #heroText h4 {
-  position: absolute;
-  width: 658px;
-  height: 45.86px;
-  left: 290.94px;
-  top: 429.81px;
   font-size: 40px;
   font-weight: 100;
-  line-height: 52px;
-  /* or 130% */
   color: #FFFFFF;
+  margin: 30px 0 0 0;
 }
 #hero img {
   position: absolute;
@@ -112,7 +189,7 @@ header #rightSide button:hover {
   top: 140px;
   width: 1144px;
 }
-#weLove #mainOfweLove > div:first-of-type > h2:first-of-type {
+#weLove #mainOfweLove > section:first-of-type > h2:first-of-type {
   color: #000000;
   line-height: 42px;
   width: 752px;
@@ -130,7 +207,6 @@ header #rightSide button:hover {
   color: #000000;
   font-size: 18px;
   line-height: 27px;
-  /* or 150% */
   display: flex;
   align-items: center;
 }
@@ -140,7 +216,7 @@ header #rightSide button:hover {
 #weLove #mainOfweLove #theFourReasons p {
   width: 260px;
 }
-#weLove #mainOfweLove #theFourReasons > div {
+#weLove #mainOfweLove #theFourReasons > section {
   height: 250px;
   margin-right: 31px;
 }
@@ -162,17 +238,13 @@ header #rightSide button:hover {
 #team #teamGlory h2 {
   font-size: 32px;
   line-height: 42px;
-  /* or 130% */
-  width: 530px;
   height: 65.97px;
 }
 #team #teamGlory h4 {
-  width: 530px;
   height: 131.01px;
   font-family: Proxima Nova;
   font-size: 18px;
   line-height: 27px;
-  /* or 150% */
   color: #000000;
   font-weight: 100;
 }
@@ -194,6 +266,7 @@ header #rightSide button:hover {
 }
 #smallSection {
   height: 424px;
+  width: 1920px;
 }
 #smallSection #light {
   position: absolute;
@@ -279,12 +352,14 @@ header #rightSide button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #reviews #customers #leftButton {
-  position: relative;
-  right: 45px;
+  position: absolute;
+  left: -25px;
+  top: 303px;
 }
 #reviews #customers #rightButton {
-  position: relative;
-  right: -995px;
+  position: absolute;
+  right: -25px;
+  top: 303px;
 }
 #reviews #customers #comments {
   width: 100%;
@@ -293,15 +368,14 @@ header #rightSide button:hover {
   margin-top: 66px;
   font-size: 18px;
   line-height: 27px;
-  /* or 150% */
   color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 #reviews #customers #comments #text {
-  width: 949px;
+  width: 86%;
   height: 216px;
+  position: absolute;
+  left: 70px;
+  top: 200px;
 }
 #reviews #customers #comments #text p {
   margin-top: 0;
@@ -309,6 +383,7 @@ header #rightSide button:hover {
 #reviews #customers #comments #text span {
   margin-top: 314px;
   margin-left: 681px;
+  font-weight: bold;
 }
 footer {
   width: 1920px;
@@ -331,20 +406,20 @@ footer #mainFooter #container {
   margin-left: 380px;
   width: 810px;
 }
-footer #mainFooter #container div {
+footer #mainFooter #container section {
   text-align: left;
 }
-footer #mainFooter #container div h5 {
+footer #mainFooter #container section h5 {
   font-size: 16px;
   line-height: 23px;
   color: #FFFFFF;
   margin-top: 40px;
 }
-footer #mainFooter #container div ul {
+footer #mainFooter #container section ul {
   margin: 0;
   padding: 0;
 }
-footer #mainFooter #container div ul li {
+footer #mainFooter #container section ul li {
   font-size: 14px;
   line-height: 22px;
   /* or 160% */
@@ -413,4 +488,142 @@ footer #copyRight ul li {
 }
 footer #copyRight ul li:first-of-type {
   color: #2863FD;
+}
+@media only screen and (max-width: 992px) {
+  header {
+    width: 890px;
+  }
+  header #leftSide ul {
+    display: none;
+  }
+  header #rightSide #menuBar {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #hero {
+    width: 992px;
+  }
+  #hero #heroText {
+    position: absolute;
+    top: 144px;
+    left: 28px;
+    width: 540px;
+    height: 166px;
+  }
+  #hero #heroText h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  #hero #heroText h4 {
+    font-size: 32px;
+  }
+  #hero img {
+    width: 608px;
+    height: 410px;
+    right: 26px;
+    top: 336px;
+  }
+  #weLove {
+    height: 1050px;
+    width: 992px;
+  }
+  #weLove #mainOfweLove {
+    top: 100px;
+    left: 27px;
+    width: 820px;
+  }
+  #weLove #mainOfweLove #theFourReasons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    height: auto;
+  }
+  #weLove #mainOfweLove #theFourReasons > section {
+    margin-top: 50px;
+  }
+  #team {
+    top: 1835px;
+    width: 992px;
+    height: 545px;
+  }
+  #team #teamGlory {
+    left: 25px;
+    bottom: 200px;
+    width: 430px;
+  }
+  #team #teamGlory h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  #team #teamGlory h4 {
+    height: 156px;
+    width: 435px;
+  }
+  #team #lightBlue {
+    width: 336px;
+    height: 423px;
+  }
+  #team img {
+    top: 32px;
+    right: 38px;
+    width: 428px;
+    height: 358px;
+  }
+  #smallSection {
+    width: 992px;
+  }
+  #smallSection #light {
+    top: 2365px;
+    width: 539px;
+    left: 453px;
+  }
+  #smallSection #chat {
+    top: 2410px;
+    width: 992px;
+  }
+  #reviews {
+    top: 2790px;
+    width: 992px;
+  }
+  #reviews #customers {
+    width: 891px;
+    top: 100px;
+    left: 27px;
+  }
+  #reviews #customers #comments {
+    height: 407px;
+  }
+  #reviews #customers #text {
+    height: 238px;
+    width: 755px;
+  }
+  #reviews #customers #text span {
+    position: absolute;
+    top: -50px;
+    left: -190px;
+    width: 269px;
+  }
+  #reviews #lightStyle {
+    width: 579px;
+    margin-top: 196px;
+  }
+  footer {
+    width: 992px;
+    height: auto;
+  }
+  footer #container {
+    margin-left: 20px !important;
+    width: 690px;
+  }
+  footer #contacts {
+    margin-right: 20px !important;
+    margin-left: 50px;
+  }
+  footer #contacts #findUs {
+    width: 200px !important;
+  }
+  footer #copyRight {
+    width: 952px;
+    margin-left: 20px !important;
+  }
 }
