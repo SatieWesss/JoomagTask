@@ -13,6 +13,7 @@ body li {
 }
 body button {
   outline: none;
+  cursor: pointer;
 }
 header {
   position: absolute;
@@ -376,13 +377,18 @@ header #rightSide button:hover {
   position: absolute;
   left: 70px;
   top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#reviews #customers #comments #text p {
-  margin-top: 0;
+#reviews #customers #comments #text #here {
+  line-height: 42px;
+  text-align: left;
 }
-#reviews #customers #comments #text span {
-  margin-top: 314px;
-  margin-left: 681px;
+#reviews #customers #comments #text #author {
+  position: absolute;
+  top: 250px;
+  left: 681px;
   font-weight: bold;
 }
 footer {
@@ -625,5 +631,13 @@ footer #copyRight ul li:first-of-type {
   footer #copyRight {
     width: 952px;
     margin-left: 20px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #leftButton {
+    display: none;
+  }
+  #rightButton {
+    display: none;
   }
 }
